@@ -1,0 +1,15 @@
+TranslationQualityClassifier:
+  embeddings_model: 'intfloat/multilingual-e5-large'
+  qe_model_path: 'best_models/local_embeddings/hidden_dims=794,177,80@lr=0.0028575617445571523@batch_size=32/translation_quality_model@epoch50.pt'
+  INPUT_DIM: 2048  # Dimension of the sentence embeddings X 2
+  HIDDEN_DIMS: [794, 177, 80]
+  OUTPUT_DIM: 1
+  THRESHOLD: 0.5
+
+CometQE:
+  comet_qe_model_path: '../best_models/comet_qe/checkpoints/comet_qe.ckpt'
+  qe_model_path: '../best_models/comet_qe-trained_model.pkl'
+
+huggingface_access_token: '<YOUR_TOKEN>'
+translation_model: 'facebook/nllb-200-distilled-600M'
+save_interval: 10 #100000

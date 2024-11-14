@@ -1,0 +1,24 @@
+evaluate==0.4.1
+langchain==0.2.5
+matplotlib==3.7.5
+mord==0.7
+nltk==3.8.1 # for METEOR
+numpy==1.24.2
+openai==1.35.5
+optuna==3.6.1
+pandas==2.0.3
+protobuf==4.25.3
+python-dotenv==1.0.1
+PyYAML==6.0.1
+Requests==2.32.3
+sacrebleu==2.4.2 # for BLEU
+scikit-learn==1.4.2
+scipy==1.10.1
+seaborn==0.13.2
+sentence_transformers==2.7.0
+simalign==0.4
+torch==2.2.2
+tqdm==4.62.3
+transformers==4.38.2
+unbabel-comet==2.2.2 # for COMET
+openpyxl # for plots

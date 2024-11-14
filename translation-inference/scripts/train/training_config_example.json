@@ -1,0 +1,22 @@
+{
+  "learning_rate": 2e-5,
+  "num_train_epochs": 15,
+  "per_device_train_batch_size": 32,
+  "weight_decay": 0.01,
+  "save_total_limit": 3,
+  "predict_with_generate": true,
+  "fp16": false,
+  "save_strategy": "epoch",
+  "eval_steps": 5500,
+  "pretrained_model": "Helsinki-NLP/opus-mt-ar-he",
+  "from_config": "Helsinki-NLP/opus-mt-ar-he",
+  "tokenizer_dir": "",
+  "target_txt_path": "../dataset/target.txt",
+  "src_txt_path": "../dataset/source.txt",
+  "validation_ratio": 0.005,
+  "validation_seed": 53,
+  "output_dir": "../models",
+  "model_name": "OPUS-FT",
+  "model_version": "0.0",
+  "max_length": 512
+}
