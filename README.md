@@ -1,7 +1,7 @@
 # Translation
 
 This repo contains 3 services for a complete **translation** app: 
-1. Inference  - [Readme](/translation-inference/README.md)
+1. Inference  - [Readme](/translation-inference/Readme.md)
 2. Client Side - [Readme](/translation-client/README.md)
 3. Server Side - [Readme](/translation-be/README.md)
 
