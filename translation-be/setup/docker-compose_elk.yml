@@ -1,0 +1,61 @@
+version: '3.7'
+
+services:
+  elasticsearch:
+    container_name: elasticsearch
+    build:
+      context: elasticsearch/
+      args:
+        ELK_VERSION: 7.16.0
+    volumes:
+      - type: volume
+        source: elasticsearch
+        target: /usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+      discovery.type: single-node
+      cluster.name: "docker-cluster"
+      network.host: 0.0.0.0
+
+    networks:
+      - elk
+
+  kibana:
+    container_name: kibana
+    build:
+      context: kibana/
+      args:
+        ELK_VERSION: 7.16.0
+    ports:
+      - "5601:5601"
+    environment:
+      server.name: kibana
+      server.host: "0"
+      elasticsearch.hosts: "http://localhost:9200"
+    networks:
+      - elk
+    depends_on:
+      - elasticsearch
+  
+  logstash:
+    image: docker.elastic.co/logstash/logstash:8.8.1
+    user: root
+    container_name: logstash
+    volumes:
+      - ./../logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+      - ./../file.log:/usr/share/logstash/logs/logfile.log
+    networks:
+      - elk
+    depends_on:
+      - elasticsearch
+
+
+networks:
+  elk:
+    driver: bridge
+
+volumes:
+  elasticsearch:

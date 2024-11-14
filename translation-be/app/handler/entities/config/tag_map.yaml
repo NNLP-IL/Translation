@@ -1,0 +1,225 @@
+tags:
+  PERSON:
+    description: People including fictional.
+    color: Red
+    hex: "#FF0000"
+  PER:
+    description: Used as an alternative to PERSON.
+    color: Red
+    hex: "#FF0000"
+  NORP:
+    description: Nationalities, religious, or political groups.
+    color: Blue
+    hex: "#0000FF"
+  FACILITY:
+    description: Buildings, airports, highways, bridges, etc.
+    color: Green
+    hex: "#008000"
+  FAC:
+    description: Used as an alternative to FACILITY.
+    color: Green
+    hex: "#008000"
+  ORGANIZATION:
+    description: Companies, agencies, institutions, etc.
+    color: Yellow
+    hex: "#FFFF00"
+  ORG:
+    description: Used as an alternative to ORGANIZATION.
+    color: Yellow
+    hex: "#FFFF00"
+  GPE:
+    description: Countries, cities, states.
+    color: Cyan
+    hex: "#00FFFF"
+  LOCATION:
+    description: Non-GPE locations, mountain ranges, bodies of water.
+    color: Magenta
+    hex: "#FF00FF"
+  LOC:
+    description: Used as an alternative to LOCATION.
+    color: Magenta
+    hex: "#FF00FF"
+  PRODUCT:
+    description: Vehicles, weapons, foods, etc. (Not services).
+    color: Orange
+    hex: "#FFA500"
+  EVENT:
+    description: Named hurricanes, battles, wars, sports events, etc.
+    color: Purple
+    hex: "#800080"
+  EVE:
+    description: Used as an alternative to EVENT.
+    color: Purple
+    hex: "#800080"
+  WORK_OF_ART:
+    description: Titles of books, songs, etc.
+    color: Pink
+    hex: "#FFC0CB"
+  ART:
+    description: Used as an alternative to WORK_OF_ART.
+    color: Plum
+    hex: "#DDA0DD"
+  LAW:
+    description: Named documents made into laws.
+    color: Brown
+    hex: "#A52A2A"
+  LANGUAGE:
+    description: Any named language.
+    color: Navy
+    hex: "#000080"
+  DATE:
+    description: Absolute or relative dates or periods.
+    color: Olive
+    hex: "#808000"
+  TIME:
+    description: Times smaller than a day.
+    color: Teal
+    hex: "#008080"
+  TIMEX:
+    description: Expressions of time, including dates, durations, and frequencies.
+    color: MidnightBlue
+    hex: "#191970"
+  PERCENT:
+    description: Percentage (including "%").
+    color: Lime
+    hex: "#00FF00"
+  MONEY:
+    description: Monetary values, including unit.
+    color: Maroon
+    hex: "#800000"
+  QUANTITY:
+    description: Measurements such as weight or distance.
+    color: Aqua
+    hex: "#00FFFF"
+  ORDINAL:
+    description: First, Second etc.
+    color: Coral
+    hex: "#FF7F50"
+  CARDINAL:
+    description: Numerals that do not fall under another type.
+    color: Indigo
+    hex: "#4B0082"
+  EMAIL:
+    description: Email addresses.
+    color: Violet
+    hex: "#EE82EE"
+  PHONE:
+    description: Phone numbers.
+    color: Chartreuse
+    hex: "#7FFF00"
+  PRICE:
+    description: Cost or value of a product or service.
+    color: Goldenrod
+    hex: "#DAA520"
+  COMPETITION:
+    description: Contests or rivalries between entities.
+    color: Crimson
+    hex: "#DC143C"
+  FOOD:
+    description: Specific mentions of food items or dishes.
+    color: Sienna
+    hex: "#A0522D"
+  DRINK:
+    description: Specific mentions of beverages.
+    color: Chocolate
+    hex: "#D2691E"
+  DISEASE:
+    description: Names of diseases or medical conditions.
+    color: DarkRed
+    hex: "#8B0000"
+  MEDICATION:
+    description: Specific mentions of medicines or drugs.
+    color: LightSkyBlue
+    hex: "#87CEFA"
+  GAME:
+    description: Video games, board games, or other forms of games.
+    color: MediumSlateBlue
+    hex: "#7B68EE"
+  APP:
+    description: Names of software applications.
+    color: SteelBlue
+    hex: "#4682B4"
+  TECH:
+    description: Mentions of technologies or technical concepts.
+    color: SlateGray
+    hex: "#708090"
+  PERSON_TITLE:
+    description: Titles of people, linked with their name.
+    color: DarkOrange
+    hex: "#FF8C00"
+  AWARD:
+    description: Names of awards or prizes.
+    color: Gold
+    hex: "#FFD700"
+  PLANT:
+    description: Mentions of specific plants or trees.
+    color: ForestGreen
+    hex: "#228B22"
+  ANIMAL:
+    description: Mentions of specific animals.
+    color: SaddleBrown
+    hex: "#8B4513"
+  INSTRUMENT:
+    description: Mentions of musical instruments.
+    color: MediumOrchid
+    hex: "#BA55D3"
+  RELIGION:
+    description: Mentions of religions, sects, or spiritual beliefs.
+    color: DarkSlateBlue
+    hex: "#483D8B"
+  MYTH:
+    description: References to mythological or legendary figures and events.
+    color: DarkMagenta
+    hex: "#8B008B"
+  ASTRONOMICAL_OBJECT:
+    description: Mentions of planets, stars, and other celestial bodies.
+    color: DeepSkyBlue
+    hex: "#00BFFF"
+  TOOL:
+    description: Mentions of physical tools and equipment.
+    color: Peru
+    hex: "#CD853F"
+  DOCUMENT:
+    description: References to non-legal documents, such as reports, articles, and letters.
+    color: LightCoral
+    hex: "#F08080"
+  SUBSTANCE:
+    description: References to chemicals, materials, and elements.
+    color: Tomato
+    hex: "#FF6347"
+  ACT:
+    description: References to actions, deeds, and activities.
+    color: MediumSeaGreen
+    hex: "#3CB371"
+  ROLE:
+    description: Mentions of roles or positions people hold, often in a specific context (e.g., "CEO", "President").
+    color: RoyalBlue
+    hex: "#4169E1"
+  WEBSITE:
+    description: Names of websites and online platforms.
+    color: DarkTurquoise
+    hex: "#00CED1"
+  VEHICLE:
+    description: Specific mentions of vehicles, including cars, planes, boats, etc.
+    color: DarkSlateGray
+    hex: "#2F4F4F"
+  CURRENCY:
+    description: Specific mentions of currency types, not just amounts (e.g., "USD", "Euro").
+    color: MediumVioletRed
+    hex: "#C71585"
+  NATURAL_DISASTER:
+    description: Mentions of natural disasters (e.g., "earthquake", "tsunami").
+    color: FireBrick
+    hex: "#B22222"
+  CLIMATE:
+    description: References to climate or weather conditions.
+    color: LightSteelBlue
+    hex: "#B0C4DE"
+  CELEBRATION:
+    description: References to holidays, festivals, or other celebrations.
+    color: SandyBrown
+    hex: "#F4A460"
+  SPORT:
+    description: Mentions of sports or athletic activities.
+    color: DarkOliveGreen
+    hex: "#556B2F"

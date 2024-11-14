@@ -1,0 +1,8 @@
+venv
+.venv
+.idea
+/app/.env
+*.pyc
+*models/*
+file.log
+.vscode

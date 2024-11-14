@@ -1,0 +1,14 @@
+[
+  {
+    "label": "ערבית",
+    "code": "ar",
+    "direction": "rtl",
+    "native_name": "العربية"
+  },
+  {
+    "label": "עברית",
+    "code": "he",
+    "direction": "rtl",
+    "native_name": "עברית"
+  }
+]

@@ -1,0 +1,42 @@
+evaluate==0.4.1
+langchain==0.2.5
+matplotlib==3.7.5
+mord==0.7
+nltk==3.8.1 # for METEOR
+numpy
+openai==1.35.5
+optuna==3.6.1
+pandas==2.0.3
+protobuf==4.25.3
+python-dotenv==1.0.1
+PyYAML==6.0.1
+Requests==2.32.3
+sacrebleu==2.4.2 # for BLEU
+scikit-learn==1.4.2
+scipy
+seaborn==0.13.2
+sentence_transformers==2.7.0
+simalign==0.4
+torch==2.2.2
+tqdm==4.62.3
+transformers==4.38.2
+unbabel-comet==2.2.2 # for COMET
+typing_extensions==4.11.0
+ujson==5.9.0
+uvicorn==0.29.0
+uvloop==0.19.0
+watchfiles==0.21.0
+websockets==12.0
+pytest 
+translit-me
+pydantic==2.7.4
+translit_me==1.1.0
+git+https://github.com/twardoch/gimeltra
+loguru==0.7.2
+fastapi==0.111.0
+langdetect==1.0.9
+opentelemetry-sdk==1.25.0
+elasticsearch==8.14.0
+opentelemetry-instrumentation-fastapi==0.46b0
+GPUtil==1.4.0
+psutil==6.0.0

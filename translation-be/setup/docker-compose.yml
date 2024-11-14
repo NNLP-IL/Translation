@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  translation-be:
+    image: translation-be:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./../:/app 
+    working_dir: /app
+    ports:
+      - 8006:8000
+    environment:
+      LOGGER_CONFIG_PATH: "config/loggin_config.json"
+      TRANSLITERATE_ENGINE: "GIMELTRA"
+      ARABIC_TRANSLATE_MODEL_PATH: "HebArabNlpProject/mt-ar-he"
+      HEBREW_TRANSLATE_MODEL_PATH: "HebArabNlpProject/mt-he-ar"
+      # ELASTIC_URL: "http://gpu3:9200"

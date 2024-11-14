@@ -1,0 +1,7 @@
+.customDrawer {
+  width: 100%;
+  height: 35.5vh;
+  max-height: 35.5vh;
+  color: var(--elementsText);
+  background-color: var(--elementsBackground);
+}

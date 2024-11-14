@@ -1,0 +1,39 @@
+/* ==== App color mode style ==== */
+:root {
+  --appBackground: #eee;
+  --elementsBackground: #fff;
+  --elementsText: #333a45;
+  --textFieldBorder: #ccc;
+  --loaderColor: #333a45;
+  --loader-background: #fff;
+  --local-loader-bg: #ffffff7d;
+  --buttonTextColor: #1976d2c4;
+  --iconsColor: #333a45;
+}
+[data-theme="dark"] {
+  --appBackground: #333a45;
+  --elementsBackground: rgb(43, 50, 59);
+  --elementsText: #dcdcdc;
+  --textFieldBorder: #777;
+  --loaderColor: #eee;
+  --loader-background: #333a45;
+  --local-loader-bg: #2b323bc4;
+  --buttonTextColor: #fff;
+  --iconsColor: #ffffffa1;
+}
+#App {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--appBackground);
+}
+
+/*==== Scroll bar style ===== */
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: var(--textFieldBorder);
+}

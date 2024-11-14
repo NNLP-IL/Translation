@@ -1,0 +1,5 @@
+PRINT_START = '\033['
+RED = '91m'
+BLUE = '94m'
+GREEN = '32m'
+PRINT_STOP = '\033[0m'
