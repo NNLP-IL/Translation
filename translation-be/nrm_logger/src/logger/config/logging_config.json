@@ -1,0 +1,16 @@
+{
+    "logger_object": {
+        "singleton": true,
+        "format": "simple",
+        "formatters": {
+            "simple": "{time:MMMM D, YYYY > HH:mm:ss} | {extra[name]} | {level} | {message}",
+            "serialize": true
+        },
+        "level": "TRACE",
+        "filename": "file.log",
+        "rotation": {
+            "time": "1 week",
+            "retention": "10 days"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: nrm_logger
+Version: 0.1.0
+Summary: A logger package
+Author-email: Moshe Gotam <moshego@pyland.com>
+License: MIT License
+Requires-Dist: annotated-types==0.6.0
+Requires-Dist: loguru==0.7.2
+Requires-Dist: pydantic==2.6.4
+Requires-Dist: pydantic_core==2.16.3
+Requires-Dist: typing_extensions==4.10.0
