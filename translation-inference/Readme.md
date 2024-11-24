@@ -49,11 +49,12 @@ python3 /scripts/inference/predict.py <src_file> <output_dir> [options]
 ```
 
 Required Arguments:
-- `src_file`: Path to the file containing the source data.
-- `output_dir`: Directory to save the translations and timing results.
+- `--src_file`: Path to the file containing the source data.
+- `--output_dir`: Directory to save the translations and timing results.
 
 Optional Arguments:
-- `--model`: Path to the translation model (default: '../MODELS/ft_opus_pre_0.0')
+- `--model`: Path to the translation model (default: 'HebArabNlpProject/mt-ar-he'. `options: {ar2he: 'HebArabNlpProject/mt-ar-he', he2ar: 'HebArabNlpProject/mt-he-ar'}`) 
+- `--tokenizer`: Path to the Tokenizer model (default: 'Helsinki-NLP/opus-mt-ar-he'. options: `{ar2he: 'Helsinki-NLP/opus-mt-ar-he', he2ar: 'Helsinki-NLP/opus-mt-he-ar'}`)
 - `--batch_size`: Batch size for translation (default: 8)
 - `--alignment_method`: Alignment method to use. Options: "inter", "itermax", "mwmf" (default: "itermax")
 - `--timing`: Enable timing of the code (for batch processing)
