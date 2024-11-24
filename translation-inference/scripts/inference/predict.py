@@ -4,7 +4,7 @@ from typing import List
 from tqdm import tqdm
 import torch
 import sys
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.append("translation-inference")
 
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
@@ -16,7 +16,7 @@ import json
 import time
 
 class Translator():
-    def __init__(self, tokenizer_path='Helsinki-NLP/opus-mt-ar-he', trans_model_path='../MODELS/ft_opus_pre_0.0',
+    def __init__(self, tokenizer_path='Helsinki-NLP/opus-mt-ar-he', trans_model_path="HebArabNlpProject/mt-ar-he",
                  chunk_size=60, alignment_method='itermax',
                  device='cuda'):
         self.device = device
@@ -158,9 +158,10 @@ class Translator():
 
 def main():
     parser = argparse.ArgumentParser(description="Send sentences to translation")
-    parser.add_argument('src_file', type=str, help="File containing the source data.")
-    parser.add_argument('output_dir', type=str, help="The output dir to save the translations")
-    parser.add_argument('--model', type=str, default='../MODELS/ft_opus_pre_0.0', help="The model we use for translations")
+    parser.add_argument('--src_file', type=str, help="File containing the source data.")
+    parser.add_argument('--output_dir', type=str, help="The output dir to save the translations")
+    parser.add_argument('--model', type=str, default='HebArabNlpProject/mt-he-ar', help="The model we use for translations")
+    parser.add_argument('--tokenizer', type=str, default='Helsinki-NLP/opus-mt-he-ar', help="Tokenizer model path")
     parser.add_argument('--batch_size', type=int, default=8, help="batch size for translation")
     parser.add_argument('--alignment_method', type=str, default='itermax', choices=["inter", "itermax", "mwmf"],
                         help="The alignment method we use, based on this paper: https://arxiv.org/pdf/2004.08728")
@@ -169,6 +170,7 @@ def main():
     args = parser.parse_args()
     batch_size = args.batch_size
     trans_model_path = args.model
+    tokenizer = args.tokenizer
     os.makedirs(args.output_dir, exist_ok=True)
 
     # Set device to CUDA if available, otherwise use CPU
@@ -178,7 +180,7 @@ def main():
     src_sentences = convert_data_to_list(load_data(args.src_file), desired_field='source')
 
     # Create a translator
-    translator = Translator(device=device, trans_model_path=trans_model_path, alignment_method=args.alignment_method)
+    translator = Translator(device=device, tokenizer_path=tokenizer, trans_model_path=trans_model_path, alignment_method=args.alignment_method)
     translations, timing_info = translator.run(src_sentences=src_sentences, batch_size=batch_size)
 
     if args.timing:

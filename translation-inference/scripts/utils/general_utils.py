@@ -87,9 +87,11 @@ def split_into_batches(data: list, batch_size: int):
 
 
 def list_to_file(input_list: list, file_path: str):
+    input_list = [input_list] if not isinstance(input_list, list) else input_list
     with open(file_path, 'w') as file:
         for item in input_list:
-            file.write(f"{item}\n")
+            if item:
+                file.write(f"{item}\n")
 
 
 def save_df_column_to_txt(df, file_name, column_name="text"):
