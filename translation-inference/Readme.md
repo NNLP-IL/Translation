@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Arabrew Translator** is a comprehensive project for translating text from Arabic to Hebrew. This project includes all the necessary code for preparing the data, training the model, performing inference, evaluating the model, and more. Aim to provide a robust and accurate translation model that can be easily integrated into various applications.
+**Arabrew Translator** is a comprehensive project for translating text between Arabic and Hebrew, on both directions. This project includes all the necessary code for preparing the data, training the model, performing inference, evaluating the model, and more. Aim to provide a robust and accurate translation model that can be easily integrated into various applications.
 
 ## Project Structure
 
