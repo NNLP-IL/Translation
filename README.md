@@ -12,6 +12,20 @@ Each directory contains `README.md` file with instructions for setup and usage a
    cd yourrepository
    ```
 
+## Usage Options
+This repository offers two primary ways to interact with the application:
+
+1. **Direct Model Inference, Training, and Evaluation:** The inference module allows you to:
+
+   Run the model directly for inference tasks.
+
+   Fine-tune the model with custom data.
+
+   Evaluate the model's performance based on specific metrics.
+
+2. **Web Application Interface:** Launch the full web application by following the provided instructions to set up both the server and client sides. Ensure to configure the necessary environment variables—specifically, the server's port and the client-side connection settings. This option provides a user-friendly interface for interacting with the application.
+
+
 ## About the App
 
 #### Key Features
