@@ -34,7 +34,7 @@ def main():
     parser = argparse.ArgumentParser(description="Send sentences to translation")
     parser.add_argument('src_file', type=str, help="File containing the source data.")
     parser.add_argument('output_dir', type=str, help="The output dir to save the translations")
-    parser.add_argument('--model', type=str, default='../MODELS/ft_opus_pre_0.0', help="The model we use for translations")
+    parser.add_argument('--model', type=str, default='HebArabNlpProject/mt-ar-he', help="The model we use for translations")
     parser.add_argument('--alignment_method', type=str, default='itermax', choices=["inter", "itermax", "mwmf"],
                         help="The alignment method we use, based on this paper: https://arxiv.org/pdf/2004.08728")
 
