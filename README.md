@@ -31,7 +31,7 @@ This repository offers two primary ways to interact with the application:
 #### Key Features
 Bi-Directional Language Support:
 
-Hebrew ↔ Arabic translation.
+Hebrew ↔ Arabic translation. The system was build to handle arabic dialect spoken in Israel.
 NER and transliteration for both languages.
 
 This holistic translation system provides comprehensive language services, including:
