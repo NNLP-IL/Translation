@@ -1,7 +1,5 @@
 # Translation
 
-![Traslation](Screencast.gif)
-
 This repo contains 3 services for a complete **translation** app: 
 1. Inference  - [Readme](/translation-inference/Readme.md)
 2. Client Side - [Readme](/translation-client/README.md)
@@ -29,6 +27,8 @@ This repository offers two primary ways to interact with the application:
 
 
 ## About the App
+
+![Traslation](Screencast.gif)
 
 #### Key Features
 Bi-Directional Language Support:
